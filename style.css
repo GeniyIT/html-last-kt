@@ -1,0 +1,16 @@
+@import "vendor/normalize.css";
+@import "vendor/itc-slider/its-slider.css";
+@import "scss/base.css";
+@import "scss/blocks/root/root.css";
+@import "scss/blocks/header/header.css";
+@import "scss/blocks/nav/nav.css";
+@import "scss/blocks/main/main.css";
+@import "scss/blocks/about/about.css";
+@import "scss/blocks/shorts/shorts.css";
+@import "scss/blocks/events/events.css";
+@import "scss/blocks/slider/slider.css";
+@import "scss/blocks/menu/menu.css";
+@import "scss/blocks/photo/photo.css";
+@import "scss/blocks/facts/facts.css";
+@import "scss/blocks/contact-us/contact-us.css";
+@import "scss/blocks/footer/footer.css";

@@ -1,0 +1,110 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.slider {
+  @include full-width;
+  position: relative;
+}
+
+.slider__container {
+  @include clear-ul;
+}
+
+.slider__item {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.slider__item:nth-child(1) {
+  background-image: url(/img/pexels-photo-745988.jpeg);
+}
+.slider__item:nth-child(2) {
+  background-image: url(/img/restaurant-love-romantic-dinner.jpg);
+}
+
+.slider__article {
+  height: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__article_title {
+  margin-top: 60px;
+  font-family: $roboto;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.slider__article_text {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: $playfair;
+  font-size: 48px;
+  line-height: 1.1;
+  width: 100%;
+  max-width: $max-content-width;
+  color: white;
+  text-align: center;
+}
+
+.slider__dot {
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(179, 179, 179);
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: $large-screen) {
+  .slider__article {
+    min-height: 660px;
+  }
+
+  .slider__article_text {
+    max-width: $large-medium-content-width;
+  }
+}
+
+@media (max-width: $medium-screen) {
+  .slider__article {
+    min-height: 506px;
+  }
+
+  .slider__article_text {
+    max-width: $medium-small-content-width;
+  }
+}
+
+@media (max-width: $small-screen) {
+  .slider__article {
+    min-height: 488px;
+  }
+
+  .slider__article_text {
+    max-width: $small-tablet-content-width;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .slider__article {
+    min-height: 438px;
+  }
+
+  .slider__article_title {
+    margin-top: 40px;
+  }
+
+  .slider__article_text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: $min-content-width;
+  }
+}
