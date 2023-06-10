@@ -34,7 +34,7 @@
 }
 
 .photo__item:nth-of-type(4) {
-  background-image: url("html-last-kt/img/pexels-marta-dzedyshko-2067396.jpg");
+  background-image: url("/html-last-kt/img/pexels-marta-dzedyshko-2067396.jpg");
   background-position-y: 70%;
   grid-column: span 1;
 }
